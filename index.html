@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Movie list</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<style></style>
+	</head>
+	<body>
+      <div class="container">
+         <h1 class="text-center mt-3 h2">Add your favourite movie</h1>
+      <form>
+         <div class="form-group">
+            <label for="moviename">Movie name</label>
+            <input type="text" name="moviename" id="moviename" class="form-control form-control-lg">
+         </div>
+         <div class="form-group">
+            <label for="releaseyear">Year of Release</label>
+            <input type="number" name="releaseyear" id="releaseyear" class="form-control form-control-lg">
+         </div>
+         <div class="form-group">
+            <label for="descr">Short description of the movie</label>
+            <textarea name="description" id="descri" cols="30" rows="5" class="form-control form-control-lg"></textarea>
+         </div>
+         <div>
+            <input class="btn btn-secondary btn-block btn-lg" type="submit" value="Add">
+         </div>
+      </form>
+      <table>
+         <thead>
+            <tr>
+               <th>Movie name</th>
+               <th>Year of Release</th>
+               <th>Description</th>
+            </tr>
+         </thead>
+         <tbody>
+
+         </tbody>
+      </table>
+
+
+      </div>
+	</body>
+</html>
