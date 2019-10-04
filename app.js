@@ -31,6 +31,14 @@ UI.prototype.addToMovieList = function(movie) {
 	list.appendChild(row);
 };
 
+// clear fields prototype
+
+UI.prototype.clearFields = function() {
+	document.querySelector('#moviename').value = '';
+	document.querySelector('#releaseyear').value = '';
+	document.querySelector('#descri').value = '';
+};
+
 // function
 const form = function(event) {
 	// Getting input values
@@ -46,6 +54,9 @@ const form = function(event) {
 
 	// Add to movie list
 	ui.addToMovieList(movie);
+
+	// clear fields
+	ui.clearFields();
 
 	event.preventDefault();
 };
