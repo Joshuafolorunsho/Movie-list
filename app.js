@@ -46,7 +46,7 @@ UI.prototype.deleteMovie = function(target) {
 	}
 };
 
-// function
+// form function
 const form = function(event) {
 	// Getting input values
 	const movieInput = document.querySelector('#moviename').value,
@@ -70,6 +70,7 @@ const form = function(event) {
 		ui.clearFields();
 	}
 
+	//prevent default behaviour
 	event.preventDefault();
 };
 
@@ -83,5 +84,7 @@ deleteItm.addEventListener('click', function(event) {
 
 	//remove list
 	ui.deleteMovie(event.target);
+
+	//prevent default behaviour
 	event.preventDefault();
 });
