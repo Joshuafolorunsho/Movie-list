@@ -1,10 +1,12 @@
 # Movie List Page
 
-This movie list page is built with HTML, a bit of custom CSS, Bootstrap4 and vanilla JS
+This movie list page is built with HTML, a bit of custom CSS, Bootstrap 4 and vanilla JS
 
 ## Contribution Guide
 
 - Fork the repository, clone and make sure you are not working on the `master branch`
+
+After forking to clone, do
 
 ```bash
 git clone https://github.com/{your-github-username}/movie-list.git
