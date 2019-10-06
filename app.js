@@ -24,7 +24,7 @@ UI.prototype.addToMovieList = function(movie) {
 	<td>${movie.movieName}</td>
 	<td>${movie.yearOfRelease}</td>
 	<td>${movie.description}</td>
-	<td class="delete"><a href="#">&times;</a></td>
+	<td ><a href="#" class="delete">X</a></td>
 	`;
 
 	// append to list
@@ -37,6 +37,13 @@ UI.prototype.clearFields = function() {
 	document.querySelector('#moviename').value = '';
 	document.querySelector('#releaseyear').value = '';
 	document.querySelector('#descri').value = '';
+};
+
+// delete prototype
+UI.prototype.deleteMovie = function(target) {
+	if (target.className === 'delete') {
+		target.parentElement.parentElement.remove();
+	}
 };
 
 // function
@@ -68,3 +75,11 @@ const form = function(event) {
 
 // Event listener
 document.querySelector('#movie-form').addEventListener('submit', form);
+
+const deleteItm = document.querySelector('.movie-list');
+deleteItm.addEventListener('click', function(event) {
+	//instantiate UI
+	const ui = new UI();
+	ui.deleteMovie(event.target);
+	event.preventDefault();
+});
