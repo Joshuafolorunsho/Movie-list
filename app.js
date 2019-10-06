@@ -24,7 +24,7 @@ UI.prototype.addToMovieList = function(movie) {
 	<td>${movie.movieName}</td>
 	<td>${movie.yearOfRelease}</td>
 	<td>${movie.description}</td>
-	<td class="delete">X</td>
+	<td class="delete"><a href="#">&times;</a></td>
 	`;
 
 	// append to list
@@ -52,11 +52,16 @@ const form = function(event) {
 	// Instanting the UI constructor
 	const ui = new UI();
 
-	// Add to movie list
-	ui.addToMovieList(movie);
+	// Validation
+	if (movieInput === '' || yearInput === '' || descriptionInput === '') {
+		alert('All field is required');
+	} else {
+		// Add to movie list
+		ui.addToMovieList(movie);
 
-	// clear fields
-	ui.clearFields();
+		// clear fields
+		ui.clearFields();
+	}
 
 	event.preventDefault();
 };
