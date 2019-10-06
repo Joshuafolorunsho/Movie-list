@@ -80,6 +80,8 @@ const deleteItm = document.querySelector('.movie-list');
 deleteItm.addEventListener('click', function(event) {
 	//instantiate UI
 	const ui = new UI();
+
+	//remove list
 	ui.deleteMovie(event.target);
 	event.preventDefault();
 });
