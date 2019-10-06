@@ -1,5 +1,7 @@
 # Movie List Page
 
+This movie list page is built with HTML, bootstrap4 and vanila JS
+
 ## Contribution Guide
 
 - Fork the repository, clone and make sure you are not working on the `master branch`
