@@ -1,6 +1,6 @@
 # Movie List Page
 
-This movie list page is built with HTML, bootstrap4 and vanila JS
+This movie list page is built with HTML, a bit of custom CSS, Bootstrap4 and vanilla JS
 
 ## Contribution Guide
 
