@@ -54,7 +54,7 @@ const form = function(event) {
 
 	// Validation
 	if (movieInput === '' || yearInput === '' || descriptionInput === '') {
-		alert('All field is required');
+		alert('Please fill in all fields');
 	} else {
 		// Add to movie list
 		ui.addToMovieList(movie);
